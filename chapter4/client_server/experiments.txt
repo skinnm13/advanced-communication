@@ -1,0 +1,21 @@
+
+1. Basic client/server operation using TCPEchoClient.c and TCPEchoServer.c
+
+     - show echoing of client string
+     - do again with other client connections
+
+2. Show blocking behaviour using TCPEchoClient_Sleep.c and TCPEchoServer.c:
+
+   - start server
+   - run client with sleep
+   - run another client 
+   - ruin the first client
+
+3. Show different interface/IP binding
+
+   - change lines in TCPEchoServer_IF.c
+   - Also show IFACE_ANY
+
+
+
+
