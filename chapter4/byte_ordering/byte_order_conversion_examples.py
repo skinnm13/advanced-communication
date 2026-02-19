@@ -24,6 +24,7 @@ print(ip_address_int)
 
 # Print it out the way the little-endian machine stores it.
 print(int.to_bytes(ip_address_int, length=4, byteorder='little'))
+print(int.from_bytes(int.to_bytes(ip_address_int, length=4, byteorder='little'), byteorder='big'))
 
 # Switch these two lines to see the affect of socket.htonl.
 # h = ip_address_int
@@ -33,6 +34,6 @@ print(h)
 # Note: can also use byteorder=sys.byteorder.
 i = int.to_bytes(h, length=4, byteorder='big')
 print(i)
-
+print(int.from_bytes(i, byteorder='little'))
 
 print(int.to_bytes(h, length=4, byteorder='little'))
